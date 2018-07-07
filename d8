@@ -34,7 +34,7 @@ progdir=`pwd`
 prog="${progdir}"/`basename "${prog}"`
 cd "${oldwd}"
 
-jarfile=d8.jar
+jarfile=d8-master.jar
 libdir="$progdir"
 
 if [ ! -r "$libdir/$jarfile" ]; then
