@@ -39,16 +39,22 @@ license {
 java_binary_host {
     name: "d8",
     wrapper: "d8",
-    static_libs: [ "r8" ],
+    static_libs: ["r8lib"],
 }
 
 java_binary_host {
     name: "r8-compat-proguard",
     wrapper: "r8-compat-proguard",
-    static_libs: [ "r8" ],
+    static_libs: ["r8lib"],
+}
+
+java_binary_host {
+    name: "r8",
+    main_class: "com.android.tools.r8.R8",
+    static_libs: ["r8lib"]
 }
 
 java_import_host {
-  name: "r8",
-  jars: ["r8.jar"],
+    name: "r8lib",
+    jars: ["r8.jar"],
 }
