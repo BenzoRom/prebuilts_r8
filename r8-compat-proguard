@@ -55,7 +55,7 @@ fi
 
 # By default, give r8 a max heap size of 2 gigs. This can be overridden
 # by using a "-J" option (see below).
-defaultMx="-Xmx2G"
+defaultMx="-Xmx4G"
 
 # The following will extract any initial parameters of the form
 # "-J<stuff>" from the command line and pass them to the Java
